@@ -176,6 +176,10 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: sidebar-l;
+  display: -ms-grid;
+  display: grid;
+  place-items: start;
+  text-align: left;
 }
 
 .sidebar-r {

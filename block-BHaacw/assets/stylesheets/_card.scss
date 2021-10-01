@@ -36,6 +36,9 @@
 .sidebar-l{
     border: 1px solid black;
     grid-area: sidebar-l;
+    display: grid;
+    place-items: start;
+    text-align: left;
 }
 .sidebar-r{
     border: 1px solid black;
