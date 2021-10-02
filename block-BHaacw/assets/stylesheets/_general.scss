@@ -11,8 +11,17 @@ a{
 .tac {
     text-align: center;
 }
+.tal{
+    text-align: left;
+}
 .flex{
     display: flex;
+}
+.jcc{
+    justify-content: center;
+}
+.aic{
+    align-items: center;
 }
 .jsb{
     justify-content: space-between;
@@ -21,18 +30,17 @@ a{
     justify-content: space-evenly;
 }
 .item{
-    padding: 1rem;
+    // padding: 1rem;
     background-color: $white;
     border: 1px solid black;
     text-align: center;
     font-weight: 700;
     font-size: 1.2rem;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 .container{
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
-    border: 1px solid white;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "header header header" 
@@ -45,9 +53,38 @@ a{
     font-size: 1.8rem;
     font-weight: 500;
     color: $heading-color;
+    &-background{
+        background-color: $primary;
+        color: $white;
+    }
 }
 .common-para{
     font-size: 1.2rem;
     font-weight: 500;
     color: $text-color;
+}
+.padding-top{
+    padding-top: 1rem;    
+}
+.padding-bottom{
+    padding-bottom: 1rem;
+}
+.margin-top{
+    margin-top: 1rem;
+}
+.padding-left{
+    padding-left: 0.6rem;
+}
+.btn{
+    display: block;
+    padding-bottom: 0.6rem;
+    font-weight: 500;
+    &-primary{
+        background-color: $white;
+        color: $secondary;
+    }
+    &-secondary{
+        background-color: $secondary;
+        color: $white;
+    }
 }
