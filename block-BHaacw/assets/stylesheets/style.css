@@ -173,6 +173,16 @@ a {
   color: #ffff;
 }
 
+@media screen and (max-width: 460px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: repeat 3, 1fr;
+        grid-template-rows: repeat 3, 1fr;
+        grid-template-areas: "header header header" "sidebar-l sidebar-l sidebar-l" "article article article" "main main main" "sidebar-r-top sidebar-r-top sidebar-r-top" "sidebar-r-middle sidebar-r-middle sidebar-r-middle" "sidebar-r-bottom sidebar-r-bottom sidebar-r-bottom";
+  }
+}
+
 .heading {
   color: #ffff;
   font-size: 3rem;
